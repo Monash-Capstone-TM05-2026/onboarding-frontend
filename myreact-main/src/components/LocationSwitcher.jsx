@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Search, Navigation, Loader2 } from "lucide-react";
+import { Search, Navigation, Loader2, Italic } from "lucide-react";
 
 function LocationSwitcher({
   locations,
@@ -36,7 +36,57 @@ function LocationSwitcher({
 
   return (
     <header className="location-header">
-      <h1 className="title">AETHER</h1>
+      <div style={{ display: "flex", flexDirection: "column" }}>
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "row",
+            alignItems: "center",
+          }}
+        >
+          <div
+            className="title"
+            style={{ fontSize: "2.5rem", paddingTop: "10px" }}
+          >
+            AETHER
+          </div>
+          <div>
+            <div
+              style={{
+                display: "flex",
+                alignItems: "center",
+                flexDirection: "row",
+              }}
+            >
+              <span style={{ margin: "0 6px", fontSize: "4rem" }}>|</span>
+              <div style={{ paddingTop: "8px" }}>
+                <span
+                  style={{
+                    fontSize: "4rem",
+                    fontWeight: "500",
+                    fontfamily: "'Poppins', sans-serif",
+                  }}
+                >
+                  Air Quality
+                </span>
+                <span style={{ marginLeft: "4px", fontSize: "1.5rem" }}>
+                  in Malaysia
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          style={{
+            color: "gray",
+            fontSize: "1.75rem",
+            marginTop: "4px",
+            fontStyle: "italic",
+          }}
+        >
+          Real-Time AQI Monitoring & Insights
+        </div>
+      </div>
 
       <div className="location-controls">
         <div className="search-container">

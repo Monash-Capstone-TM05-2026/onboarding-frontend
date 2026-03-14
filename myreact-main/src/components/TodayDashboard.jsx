@@ -113,7 +113,7 @@ function TodayDashboard({
 
         <div className="risk-info">
           <div className="senior-advice-box">
-            <span className="advice-label">Elderly Care Advice:</span>
+            <span className="advice-label">Today's Advice:</span>
             <div className="senior-advice-text">{currentAdvice}</div>
           </div>
         </div>
